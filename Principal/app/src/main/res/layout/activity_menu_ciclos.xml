@@ -1,0 +1,161 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:keepScreenOn="true"
+    android:gravity="center_horizontal"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".MenuCiclos">
+
+    <TableLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:stretchColumns="1"
+        android:layout_gravity="center">
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal">
+            <TextView
+                android:id="@+id/minutos"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Minutos"
+                android:layout_gravity="center_horizontal"/>
+
+            <TextView
+                android:id="@+id/segundos"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Segundos"
+                android:layout_gravity="center_horizontal"/>
+        </TableRow>
+
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal">
+
+            <NumberPicker android:id="@+id/numberpicker"
+                android:layout_width="wrap_content"
+                android:layout_height="100dp"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_column="0"
+                android:layout_gravity="center_horizontal"/>
+
+            <NumberPicker android:id="@+id/numberpickerS"
+                android:layout_width="wrap_content"
+                android:layout_height="100dp"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_column="1"
+                android:layout_gravity="center_horizontal"/>
+        </TableRow>
+
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal">
+            <TextView
+                android:id="@+id/minutosT"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Minutos"
+                android:layout_gravity="center_horizontal"/>
+
+            <TextView
+                android:id="@+id/segundosT"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Segundos"
+                android:layout_gravity="center_horizontal"/>
+        </TableRow>
+
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal">
+            <NumberPicker android:id="@+id/numberpickerT"
+                android:layout_width="wrap_content"
+                android:layout_height="100dp"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_column="0"
+                android:layout_gravity="center_horizontal"/>
+
+            <NumberPicker android:id="@+id/numberpickerST"
+                android:layout_width="wrap_content"
+                android:layout_height="100dp"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_column="1"
+                android:layout_gravity="center_horizontal"/>
+        </TableRow>
+
+    </TableLayout>
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="100dp">
+
+
+    </RelativeLayout>
+
+
+
+
+    <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="horizontal" android:layout_width="match_parent"
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:layout_margin="5dp"
+        card_view:cardCornerRadius="5dp"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="100dp"
+                android:id="@+id/imageView"
+                android:clickable="true"
+                android:src="@drawable/ciclos"
+                android:scaleType="centerCrop"
+                android:tint="@color/photo_tint"
+                android:layout_centerInParent="true"/>
+
+            <TextView
+                android:id="@+id/entrar"
+                android:gravity="center"
+                android:background="?android:selectableItemBackground"
+                android:focusable="true"
+                android:clickable="true"
+                android:layout_width="fill_parent"
+                android:layout_height="100dp"
+                android:textSize="24sp"
+                android:layout_centerInParent="true"
+                android:textColor="@android:color/white"
+                android:text="Comenzar"
+                android:onClick="comienzaCiclo"
+                />
+
+
+
+        </RelativeLayout>
+
+
+
+    </android.support.v7.widget.CardView>
+
+
+
+</LinearLayout>

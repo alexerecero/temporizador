@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.alex.cepes.principal" >
+
+    <uses-permission android:name="android.permission.VIBRATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.alex.cepes.principal.MenuPrincipal"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.alex.cepes.principal.MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.alex.cepes.principal.Cronometro"
+            android:label="@string/title_activity_cronometro" >
+        </activity>
+        <activity
+            android:name="com.alex.cepes.principal.Ciclos"
+            android:label="@string/title_activity_ciclos" >
+        </activity>
+        <activity
+            android:name="com.alex.cepes.principal.MenuCiclos"
+            android:label="@string/title_activity_menu_ciclos" >
+        </activity>
+        <activity
+            android:name="com.alex.cepes.principal.Temporizador"
+            android:label="@string/title_activity_temporizador" >
+        </activity>
+        <activity
+            android:name="com.alex.cepes.principal.MenuTemporizador"
+            android:label="@string/title_activity_menu_temporizador" >
+        </activity>
+    </application>
+
+</manifest>

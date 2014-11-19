@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Tempo</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Ajustes</string>
+    <string name="title_activity_cronometro">Cronometro</string>
+    <string name="title_activity_ciclos">Ciclos</string>
+    <string name="title_activity_menu_ciclos">MenuCiclos</string>
+    <string name="title_activity_temporizador">Temporizador</string>
+    <string name="title_activity_menu_temporizador">MenuTemporizador</string>
+
+</resources>
